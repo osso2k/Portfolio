@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 
+
 const Comp = () => {
 
     const [nav, setNav] = useState(false)
@@ -28,7 +29,7 @@ const Comp = () => {
 >
   <h1 className='w-full text-3xl font-bold text-[#ffffff] m-4'>osso</h1>
   <ul className='p-4 uppercase'>
-    <li className='p-4 border-b'>Home</li>
+    <li className='p-4 border-b'></li>
     <li className='p-4 border-b'>Projects</li>
     <li className='p-4 border-b'>Experience</li>
   </ul>

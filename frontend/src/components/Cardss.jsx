@@ -3,6 +3,7 @@ import  {ReactTyped} from "react-typed";
 import me from "../assets/os.jpeg"
 import linkedin from "../assets/linkedin-icon.png"
 import github_icon from "../assets/github-icon.png"
+import Skills from './Skills';
 
 
 const Cardss = () => {
@@ -17,6 +18,7 @@ const Cardss = () => {
     window.location.href = `mailto:${email}`
   }
   return (
+    <div>
     <div className='grid md:grid-cols-2 grid-cols-1 '>
       <div className='order-1'>
     <div className='text-white'>
@@ -47,6 +49,11 @@ const Cardss = () => {
         </div>
       </div>
     </div>
+    <div>
+      <Skills />
+    </div>
+    </div>
+    
   )
 }
 
