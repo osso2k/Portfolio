@@ -9,14 +9,14 @@ import Functionality from './components/Functionality'
 
 const App = () => {
   return (
-    <div /* className='bg-[hsl(0,0%,10%)]'*/> 
+    <div  className='bg-[hsl(0,0%,10%)]'> 
         {/* <Todo/> */}
-        {/* <Comp />
+         {/*<Comp />*/}
         <Cardss />
         <About />
-         */}
+         
 
-         <Functionality />
+         {/* <Functionality /> */}
     </div>
   )
 }
