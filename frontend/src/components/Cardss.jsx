@@ -32,7 +32,7 @@ const Cardss = () => {
         </div>
         <div className='flex mx-auto text-center '>
         <p onClick={Mailto} className='my-auto text-center pr-2 cursor-pointer '>ossoble817@gmail.com</p>
-        <img onClick={linkdeinRed} className=' cursor-pointer w-11 rounded-lg mr-2 bg-white' src={linkedin} alt="" />
+        <img onClick={linkdeinRed} className=' cursor-pointer w-9 rounded-lg mr-2 bg-white' src={linkedin} alt="" />
         <img onClick={GithubRed} className=' w-11 cursor-pointer rounded-[15px]  ' src={github_icon} alt="" />
         </div>
       </div>
@@ -41,8 +41,8 @@ const Cardss = () => {
       <div className='order-2'>
            <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className="p-6 flex flex-col justify-center sm:text-[14px] md:text-[20px] text-lg ">
+                <p className='text-left text-lg text-white pb-4'>I specialize in full-stack development, leveraging JavaScript mainly React, with backends powered by Node.js and Express for scalable RESTful API's and server-side applications. ps:i also know python</p>
                 <p className='text-left text-lg text-white pb-4'>I'm an aspiring Full Stack Developer from Somalia who's been hooked on coding since 8th grade. That first moment I made something work with code sparked something in me that never faded. To this day, I still get that same childlike excitement every time I build a project.</p>
-                <p className='text-left text-lg text-white pb-4'>After growing up immersed in the UAE's tech-forward environment, I'm now pursuing my Software Engineering degree at Ostim Teknik University in Türkiye. What keeps me pushing forward is that addictive 'what's next?' feeling after each project, that constant curiosity about what new challenge I can tackle and what innovative solution I can build tomorrow.</p>
                
             </div>
             <img className='md:w-[300px] sm:w-[200px] rounded-2xl  sm:mx-auto' src={me} alt="" />

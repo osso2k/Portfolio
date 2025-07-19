@@ -1,20 +1,22 @@
 import React from 'react'
-import FallingText from '../Techs/FallingText'
+import CurvedLoop from '../Techs/CurvedLoop'
 
 const Skills = () => {
+
+  
   return (
-    <div className='flex h-[150px] w-full mx-auto mb-[40px] text-white'>
-      <FallingText
-    text={`I specialize in full-stack development, leveraging JavaScript mainly React, and Python for robust solutions, with backends powered by Node.js and Express for scalable API and server-side applications.`}
-    highlightWords={["React", "Express", "Node.js", "JavaScript", "full-stack","Python", "development"]}
-    highlightClass="highlighted"
-    trigger="hover"
-    backgroundColor="transparent"
-    wireframes={false}
-    gravity={0.56}
-    fontSize="2rem"
-    mouseConstraintStiffness={0.9}
+    <div  className='flex items-center justify-center h-[250px] w-full mx-auto mb-[120px] text-white text-center'>
+  
+<CurvedLoop 
+  marqueeText="JavaScript ✦ React ✦ TailwindCSS ✦ NodeJS ✦ Express ✦ PostgreSQL ✦ MongoDB ✦ Python ✦ HTML/CSS"
+  speed={2}
+  curveAmount={100}
+  direction="left"
+  interactive={true}
+  className="custom-text-style cursor-pointer text-3xl"
 />
+
+
     </div>
   )
 }
