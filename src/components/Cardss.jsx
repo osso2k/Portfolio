@@ -41,8 +41,8 @@ const Cardss = () => {
       <div className='order-2'>
            <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className="p-6 flex flex-col justify-center sm:text-[14px] md:text-[20px] text-lg ">
-                <p className='text-left text-lg text-white pb-4'>I specialize in full-stack development, leveraging JavaScript mainly React, with backends powered by Node.js and Express for scalable RESTful API's and server-side applications. ps:i also know python</p>
-                <p className='text-left text-lg text-white pb-4'>I'm an aspiring Full Stack Developer from Somalia who's been hooked on coding since 8th grade. That first moment I made something work with code sparked something in me that never faded. To this day, I still get that same childlike excitement every time I build a project.</p>
+                <p className='text-left text-sm sm:text-[14px] md:text-[20px] text-white pb-4'>I specialize in full-stack development, leveraging JavaScript mainly React, with backends powered by Node.js and Express for scalable RESTful API's and server-side applications. ps:i also know python</p>
+                <p className='text-left text-sm sm:text-[14px] md:text-[20px] text-white pb-4'>I'm an aspiring Full Stack Developer from Somalia who's been hooked on coding since 8th grade. That first moment I made something work with code sparked something in me that never faded. To this day, I still get that same childlike excitement every time I build a project.</p>
                
             </div>
             <img className='md:w-[300px] sm:w-[200px] rounded-2xl  sm:mx-auto' src={me} alt="" />
