@@ -2,9 +2,12 @@ import express from 'express'
 
 const PORT = 3000
 const app = express()
-
+const users = [{
+    names: "leo",
+    age: 23
+}]
 app.get("/", (req, res) => {
-    res.send("<h1>yo</h1>")
+    res.json(users)
     console.log("YO")
 })
 
