@@ -1,5 +1,5 @@
 import React from 'react'
-import  {ReactTyped} from "react-typed";
+import { ReactTyped } from "react-typed";
 import me from "../assets/os.jpeg"
 import linkedin from "../assets/linkedin-icon.png"
 import github_icon from "../assets/github-icon.png"
