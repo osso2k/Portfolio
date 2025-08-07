@@ -4,6 +4,8 @@ import me from "../assets/os.jpeg"
 import linkedin from "../assets/linkedin-icon.png"
 import github_icon from "../assets/github-icon.png"
 import Skills from './Skills';
+import BlurText from '../Techs/BlurText';
+
 
 
 const Cardss = () => {
@@ -18,12 +20,12 @@ const Cardss = () => {
     window.location.href = `mailto:${email}`
   }
   return (
-    <div>
-    <div className='grid md:grid-cols-2 grid-cols-1 '>
+    <div className='min-h-screen bg-[hsl(0,0%,10%)] relative'>
+    <div className='grid md:grid-cols-2 grid-cols-1 min-h-screen'>
       <div className='order-1'>
     <div className='text-white'>
-      <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
-        <p className='font-bold '>Full Stack Software Engineer</p>
+      <div className='max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center mt-[-96px]'>
+
         <p className='font-bold'>Ankara, Türkiye</p>
         <h1 className='md:text-7xl sm:text-6xl text-4xl '>Ossoble Ali</h1>
         <div className=''>
@@ -41,15 +43,13 @@ const Cardss = () => {
       <div className='order-2'>
            <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className="p-6 flex flex-col justify-center sm:text-[14px] md:text-[20px] text-lg ">
-                <p className='text-left text-sm sm:text-[14px] md:text-[20px] text-white pb-4'>I specialize in full-stack development, leveraging JavaScript mainly React, with backends powered by Node.js and Express for scalable RESTful API's and server-side applications. ps:i also know python</p>
-                <p className='text-left text-sm sm:text-[14px] md:text-[20px] text-white pb-4'>I'm an aspiring Full Stack Developer from Somalia who's been hooked on coding since 8th grade. That first moment I made something work with code sparked something in me that never faded. To this day, I still get that same childlike excitement every time I build a project.</p>
-               
-            </div>
+              <BlurText className='text-left text-sm sm:text-[14px] md:text-[24px] text-white pb-4 mt-[50%] leading-none' text="I specialize in full-stack development, leveraging JavaScript mainly React, with backends powered by Node.js and Express for scalable RESTful API's and server-side applications." delay={150} animateBy="words" direction="top"/> 
+        </div>
             <img className='md:w-[300px] sm:w-[200px] rounded-2xl  sm:mx-auto' src={me} alt="" />
         </div>
       </div>
     </div>
-    <div>
+    <div className="absolute top-[600px] left-0 right-0 h-[25vh]">
       <Skills />
     </div>
     </div>

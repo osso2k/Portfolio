@@ -1,23 +1,28 @@
 import React, { useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 
-
 const Comp = () => {
-
+    const navigate = useNavigate()
+    const location = useLocation()
     const [nav, setNav] = useState(false)
 
-    const handleNav = ()=>{
+    const handleNav = () => {
         setNav(!nav)
+    }
+
+    const navigateTo = (path) => {
+        navigate(path)
+        setNav(false)
     }
 
   return (
         <div className='flex justify-between items-center h-24 max-w-[1240px] px-4 text-white'>
             <h1 className='w-full text-3xl font-bold text-[#fff]'>osso</h1>
-            <ul className=' hidden md:flex'>
-                <li className='p-4'>Home</li>
-                <li className='p-4'>Projects</li>
-                <li className='p-4'>Experience</li>
-
+            <ul className='hidden md:flex'>
+                <li className={`p-4 cursor-pointer hover:text-gray-300 ${location.pathname === '/' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/')}>Home</li>
+                <li className={`p-4 cursor-pointer hover:text-gray-300 ${location.pathname === '/projects' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/projects')}>Projects</li>
+                <li className={`p-4 cursor-pointer hover:text-gray-300 ${location.pathname === '/experience' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/experience')}>Experience</li>
             </ul>
             <div onClick={handleNav} className='cursor-pointer block md:hidden'
 >
@@ -29,9 +34,9 @@ const Comp = () => {
 >
   <h1 className='w-full text-3xl font-bold text-[#ffffff] m-4'>osso</h1>
   <ul className='p-4 uppercase'>
-    <li className='p-4 border-b'></li>
-    <li className='p-4 border-b'>Projects</li>
-    <li className='p-4 border-b'>Experience</li>
+    <li className={`p-4 border-b cursor-pointer hover:text-gray-300 ${location.pathname === '/' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/')}>Home</li>
+    <li className={`p-4 border-b cursor-pointer hover:text-gray-300 ${location.pathname === '/projects' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/projects')}>Projects</li>
+    <li className={`p-4 border-b cursor-pointer hover:text-gray-300 ${location.pathname === '/experience' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/experience')}>Experience</li>
   </ul>
 </div>
         </div>
