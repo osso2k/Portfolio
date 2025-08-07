@@ -24,14 +24,12 @@ const Comp = () => {
                 <li className={`p-4 cursor-pointer hover:text-gray-300 ${location.pathname === '/projects' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/projects')}>Projects</li>
                 <li className={`p-4 cursor-pointer hover:text-gray-300 ${location.pathname === '/experience' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/experience')}>Experience</li>
             </ul>
-            <div onClick={handleNav} className='cursor-pointer block md:hidden'
->
-  {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
-</div>
-<div
-  className={nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 md:hidden' : 'fixed left-[-100%] top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 md:hidden'
-  }
->
+            <div onClick={handleNav} className='cursor-pointer block md:hidden'>
+              {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+            </div>
+            <div
+              className={nav ? 'fixed left-0 z-50 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 md:hidden' : 'fixed left-[-100%] top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 md:hidden'}
+            >
   <h1 className='w-full text-3xl font-bold text-[#ffffff] m-4'>osso</h1>
   <ul className='p-4 uppercase'>
     <li className={`p-4 border-b cursor-pointer hover:text-gray-300 ${location.pathname === '/' ? 'text-gray-500' : ''}`} onClick={() => navigateTo('/')}>Home</li>
