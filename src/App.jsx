@@ -13,7 +13,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Cardss />} />
             <Route path="/projects" element={<About />} />
-            <Route path="/experience" element={<div className="text-white h-full flex items-center justify-center"><h1 className="text-3xl">Experience Page</h1></div>} />
+            <Route path="/experience" element={<div className="text-white h-full flex items-center justify-center"><h1 className="text-3xl">Error 404</h1></div>} />
           </Routes>
         </div>
       </div>
