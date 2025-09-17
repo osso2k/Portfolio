@@ -4,6 +4,8 @@ import githubImg from "../assets/github.png";
 import osso from "../assets/osso.jpeg";
 import BlurText from "../Techs/BlurText";
 import Skills from "../components/Skills";
+import Projects from "./Projects";
+
 const Home = () => {
   const linkedIn = () => {
     window.open("https://www.linkedin.com/in/ossoble-ali/", "_blank");
@@ -60,6 +62,7 @@ const Home = () => {
           />
         </div>
         <Skills />
+        <Projects />
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const Skills = () => {
       level: 95,
     },
     {
-      name: "Next.js",
+      name: "Next JS",
       icon: nextpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
       level: 70,
@@ -70,13 +70,13 @@ const Skills = () => {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className={`bg-gradient-to-r ${skill.color} p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform`}
+              className={` p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform border-2 border-black`}
             >
               <div className="flex ">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-16 h-16 object-cover rounded-lg bg-white"
+                  className="w-16 h-16 object-cover rounded-lg bg-white border border-black"
                 />
               </div>
 
