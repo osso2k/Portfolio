@@ -18,6 +18,13 @@ const Home = () => {
     window.location.href = `mailto:${email}`;
   };
 
+  const playPlaylist = () => {
+    window.open(
+      "https://open.spotify.com/playlist/4IrF58xDMKzcye13PuRq3H?play=true&shuffle=true",
+      "_blank"
+    );
+  };
+
   return (
     <div>
       <div className="flex flex-col w-[40%] h-screen max-h-screen  mx-auto mt-[100px] rounded-xl p-2  border-black shadow-lg">
@@ -51,6 +58,12 @@ const Home = () => {
             src={osso}
             alt=""
           />
+          <button
+            onClick={playPlaylist}
+            className="flex px-2 py-1 max-h-40 my-auto mb-8 bg-[hsl(0,0%,12%)] border-2 shadow-lg border-black  hover:opacity-30 text-gray-500 font-semibold rounded-lg transition duration-300 ease-in-out"
+          >
+            music?
+          </button>
         </div>
         <div className="pt-4 mt-4 text-right">
           <BlurText
