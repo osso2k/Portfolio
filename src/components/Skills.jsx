@@ -29,7 +29,7 @@ const Skills = () => {
       level: 95,
     },
     {
-      name: "Next JS",
+      name: "Next ",
       icon: nextpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
       level: 70,
@@ -47,9 +47,9 @@ const Skills = () => {
       level: 85,
     },
     {
-      name: "Express JS",
+      name: "Express",
       icon: expresspng,
-      color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
+      color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)] ",
       level: 85,
     },
     {
@@ -62,10 +62,6 @@ const Skills = () => {
   return (
     <div>
       <section className="py-12 text-white mt-24">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Technical Skills
-        </h2>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
           {skills.map((skill, i) => (
             <div
@@ -80,7 +76,7 @@ const Skills = () => {
                 />
               </div>
 
-              <h3 className="text-xl font-semibold mt-2">{skill.name}</h3>
+              <h3 className="text-xl font-semibold mt-2 ">{skill.name}</h3>
             </div>
           ))}
         </div>
