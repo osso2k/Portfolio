@@ -77,16 +77,12 @@ const Home = () => {
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-md sm:text-lg md:text-xl pl-2 "
+            className="text-md sm:text-lg md:text-lg pl-2 "
           />
         </div>
 
         <div className="w-full mt-6">
           <Skills />
-        </div>
-
-        <div className="w-full mt-6">
-          <Projects />
         </div>
       </div>
     </div>

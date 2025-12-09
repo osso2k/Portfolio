@@ -13,7 +13,7 @@
     "autoprefixer": "^10.4.21",
     "dotenv": "^17.2.2",
     "framer-motion": "^12.23.12",
-    "gsap": "^3.13.0",
+    "gsap": "^3.14.1",
     "matter-js": "^0.20.0",
     "postcss": "^8.5.5",
     "react": "^19.1.0",
