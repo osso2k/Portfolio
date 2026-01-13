@@ -60,11 +60,11 @@ const Skills = () => {
               key={i}
               className={` p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform border-2 border-black`}
             >
-              <div className="flex ">
+              <div className="flex justify-center w-full">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-16 h-16 object-fit rounded-lg bg-white border border-black"
+                  className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-cover rounded-lg bg-white border border-black"
                 />
               </div>
 
