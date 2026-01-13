@@ -29,7 +29,7 @@ const Home = () => {
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className=" grid grid-cols-2 md:flex flex-col md:flex-row items-center md:items-start rounded-xl p-4 border-black shadow-lg mt-10">
           <div className="flex flex-col flex-1 pt-6 md:pt-24 pr-2">
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
               Welcome, I'm Ossoble! 👋
             </h1>
             <p className="text-sm md:text-base font-serif">Ankara, Türkiye</p>
@@ -59,7 +59,7 @@ const Home = () => {
             <Motion.img
               whileHover={{ scale: 1.1 }}
               transition={{ ease: "easeOut" }}
-              className="h-32 w-32 md:h-48 md:w-48 rounded-full object-cover"
+              className="h-36 w-36 md:h-52 md:w-52 rounded-full object-cover"
               src={osso}
               alt="profile"
             />
@@ -78,7 +78,7 @@ const Home = () => {
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-sm md:text-lg lg:text-xl pl-2 "
+            className="text-md md:text-lg lg:text-xl pl-2 "
           />
         </div>
 
