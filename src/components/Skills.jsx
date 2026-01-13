@@ -14,55 +14,47 @@ const Skills = () => {
       name: "Javascript",
       icon: jspng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 100,
     },
     {
       name: "Typescript",
       icon: tspng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 60,
     },
     {
       name: "React",
       icon: reactpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 95,
     },
     {
       name: "Next ",
       icon: nextpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 70,
     },
     {
       name: "Tailwind",
       icon: tailwindpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 85,
     },
     {
       name: "Node JS",
       icon: nodejspng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 85,
     },
     {
       name: "Express",
       icon: expresspng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)] ",
-      level: 85,
     },
     {
       name: "Databases",
       icon: dbpng,
       color: "from-[hsl(0,0%,8%)] to-[hsl(0,0%,10%)]",
-      level: 85,
     },
   ];
   return (
     <div>
       <section className="py-12 text-white mt-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
           {skills.map((skill, i) => (
             <div
               key={i}
@@ -76,7 +68,9 @@ const Skills = () => {
                 />
               </div>
 
-              <h3 className="text-xl font-semibold mt-2 ">{skill.name}</h3>
+              <h3 className="flex text-sm sm:text-lg md:text-xl text-center font-semibold mt-2 ">
+                {skill.name}
+              </h3>
             </div>
           ))}
         </div>

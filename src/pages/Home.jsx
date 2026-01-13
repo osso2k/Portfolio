@@ -1,10 +1,9 @@
-import React from "react";
 import linkedinImg from "../assets/linkedin.png";
 import githubImg from "../assets/github.png";
 import osso from "../assets/osso.jpeg";
 import BlurText from "../Techs/BlurText";
 import Skills from "../components/Skills";
-import Projects from "./Projects";
+import { motion as Motion } from "motion/react";
 
 const Home = () => {
   const linkedIn = () => {
@@ -28,7 +27,7 @@ const Home = () => {
   return (
     <div className="min-h-screen flex items-start bg-[hsl(0,0%,5%)]">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row items-center md:items-start rounded-xl p-4 border-black shadow-lg mt-10">
+        <div className=" grid grid-cols-2 md:flex flex-col md:flex-row items-center md:items-start rounded-xl p-4 border-black shadow-lg mt-10">
           <div className="flex flex-col flex-1 pt-6 md:pt-24 pr-2">
             <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
               Welcome, I'm Ossoble! 👋
@@ -57,7 +56,9 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-center md:ml-6">
-            <img
+            <Motion.img
+              whileHover={{ scale: 1.1 }}
+              transition={{ ease: "easeOut" }}
               className="h-32 w-32 md:h-48 md:w-48 rounded-full object-cover"
               src={osso}
               alt="profile"
@@ -71,13 +72,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="pt-4 mt-4 text-center md:text-right">
+        <div className="pt-4 mt-4 text-center ">
           <BlurText
             text="I'm a full-stack dev who loves to code and tackle tricky problems. I mostly work with the MERN and PERN stacks. I'm always working on improving my craft and I'm really excited to meet other developers, learn from the community, and maybe build something cool together!"
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-md sm:text-lg md:text-lg pl-2 "
+            className="text-sm md:text-lg lg:text-xl pl-2 "
           />
         </div>
 
