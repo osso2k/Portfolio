@@ -54,21 +54,21 @@ const Skills = () => {
   return (
     <div>
       <section className="py-12 text-white mt-24">
-        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6 max-w-6xl mx-auto">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className={` p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform border-2 border-black`}
+              className="flex flex-col items-center justify-center h-40 sm:h-44 md:h-48 p-4 sm:p-6 rounded-2xl   shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-black"
             >
-              <div className="flex justify-center w-full">
+              <div className="flex items-center justify-center flex-1 w-full mb-2">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-cover rounded-lg bg-white border border-black"
+                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-cover rounded-lg border border-black"
                 />
               </div>
 
-              <h3 className="flex text-sm sm:text-lg md:text-xl text-center font-semibold mt-2 ">
+              <h3 className="text-xs sm:text-sm md:text-base font-bold text-center leading-tight truncate w-full">
                 {skill.name}
               </h3>
             </div>
