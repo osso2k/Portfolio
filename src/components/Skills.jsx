@@ -64,7 +64,7 @@ const Skills = () => {
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-16 h-16 object-cover rounded-lg bg-white border border-black"
+                  className="w-16 h-16 object-fit rounded-lg bg-white border border-black"
                 />
               </div>
 
