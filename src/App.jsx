@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Extras from "./pages/Extras";
+// import Projects from "./pages/Projects";
+// import Extras from "./pages/Extras";
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/extras" element={<Extras />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/extras" element={<Extras />} /> */}
           </Routes>
         </div>
       </div>

@@ -4,6 +4,7 @@ import osso from "../assets/osso.jpeg";
 import BlurText from "../Techs/BlurText";
 import Skills from "../components/Skills";
 import { motion as Motion } from "motion/react";
+import Projects from "../components/Projects";
 
 const Home = () => {
   const linkedIn = () => {
@@ -78,12 +79,13 @@ const Home = () => {
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-md md:text-lg lg:text-xl pl-2 "
+            className="text-sm md:text-lg lg:text-xl pl-2 "
           />
         </div>
 
         <div className="w-full mt-6">
           <Skills />
+          <Projects />
         </div>
       </div>
     </div>
