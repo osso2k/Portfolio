@@ -18,12 +18,12 @@ const Home = () => {
     window.location.href = `mailto:${email}`;
   };
 
-  const playPlaylist = () => {
-    window.open(
-      "https://open.spotify.com/playlist/4IrF58xDMKzcye13PuRq3H?play=true&shuffle=true",
-      "_blank"
-    );
-  };
+  // const playPlaylist = () => {
+  //   window.open(
+  //     "https://open.spotify.com/playlist/4IrF58xDMKzcye13PuRq3H?play=true&shuffle=true",
+  //     "_blank"
+  //   );
+  // };
 
   return (
     <div className="min-h-screen flex items-start bg-[hsl(0,0%,5%)]">
@@ -64,12 +64,12 @@ const Home = () => {
               src={osso}
               alt="profile"
             />
-            <button
+            {/* <button
               onClick={playPlaylist}
               className="mt-4 md:mt-6 px-3 py-2 bg-[hsl(0,0%,12%)] border-2 shadow-lg border-black hover:opacity-70 text-gray-300 font-semibold rounded-lg transition duration-300 ease-in-out"
             >
               music?
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -79,7 +79,7 @@ const Home = () => {
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-sm md:text-lg lg:text-xl pl-2 "
+            className="text-md md:text-lg lg:text-xl pl-2 "
           />
         </div>
 
