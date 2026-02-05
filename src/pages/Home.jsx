@@ -2,7 +2,7 @@ import linkedinImg from "../assets/linkedin.png";
 import githubImg from "../assets/github.png";
 import osso from "../assets/osso.jpeg";
 import BlurText from "../Techs/BlurText";
-import Skills from "../components/Skills";
+// import Skills from "../components/Skills";
 import { motion as Motion } from "motion/react";
 import Projects from "../components/Projects";
 
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
 
         <div className="w-full mt-6">
-          <Skills />
+          {/* <Skills /> */}
           <Projects />
         </div>
       </div>
