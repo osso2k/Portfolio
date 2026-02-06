@@ -26,7 +26,7 @@ const Home = () => {
   // };
 
   return (
-    <div className="min-h-screen flex items-start bg-[hsl(0,0%,5%)]">
+    <div className="min-h-screen flex flex-col items-start">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className=" grid grid-cols-2 md:flex flex-col md:flex-row items-center md:items-start rounded-xl p-4 border-black shadow-lg mt-10">
           <div className="flex flex-col flex-1 pt-6 md:pt-24 pr-2">
@@ -75,7 +75,7 @@ const Home = () => {
 
         <div className="pt-4 mt-4 text-center ">
           <BlurText
-            text="I'm a full-stack dev who loves to code and tackle tricky problems. I mostly work with the MERN and PERN stacks. I'm always working on improving my craft and I'm really excited to meet other developers, learn from the community, and maybe build something cool together!"
+            text="I'm a full-stack developer who enjoys building real projects and solving problems that come up along the way. I like taking ideas from scratch to something working and usable, and I pay attention to the small details that make software reliable and easy to use. I spend most of my time coding, learning through practice, and improving with each project, and I'm always open to meeting other developers and building things together!"
             delay={50}
             animateBy="words"
             direction="top"
@@ -83,11 +83,11 @@ const Home = () => {
           />
         </div>
 
-        <div className="w-full mt-6">
+      </div>
+        <div className="max-w-full mt-6">
           {/* <Skills /> */}
           <Projects />
         </div>
-      </div>
     </div>
   );
 };
