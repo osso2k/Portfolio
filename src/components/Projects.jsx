@@ -11,7 +11,7 @@ const Projects = () => {
           </div>
           <img src={schedly} alt="" className=' rounded-lg w-fit object-contain border border-black ' />
           <h2 className='text-md text-gray-300 mt-2'>Time managesment tool</h2>
-          <p className='font-medium text-sm my-2 text-gray-400'>I've always struggled with managing my time, so I built a simple app to help people plan their days and stay focused on what they want to get done. The app lets users write down tasks for each day and see them in a weekly view, like a digital planner. I built the interface using React and used Express with on the backend to save user data. People can create accounts and log in, and their schedules are stored in a PostgreSQL database so they don’t lose their plans when they come back later.</p>
+          <p className='font-medium text-sm my-2 text-gray-400'>I've always struggled with managing my time, so I built a simple app to help people plan their days and stay focused on what they want to get done. The app lets users write down tasks for each day and see them in a weekly view, like a digital planner. I built the interface using React and used Express on the backend to save user data. People can create accounts and log in, and their schedules are stored in a PostgreSQL database so they don’t lose their plans when they come back later.</p>
           <div className='flex gap-1 flex-wrap'>
             <p className='text-cyan-400 bg-cyan-600 bg-opacity-25 px-2 py-1 text-sm rounded'>React</p>
             <p className='text-blue-400 bg-blue-600 bg-opacity-25 px-2 py-1 text-sm rounded'>TypeScript</p>
