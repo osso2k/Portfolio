@@ -2,10 +2,11 @@ import React from 'react'
 import schedly from '../assets/schedly.png'
 import jprep  from '../assets/jprep.png'
 import airesume  from '../assets/airesumereviewer.png'
+import  {motion} from 'motion/react';
 const Projects = () => {
   return (
     <div className='max-w-[90%] mx-auto grid grid-cols-1 gap-1 sm:gap-2 md:gap-3 md:grid-cols-2 lg:grid-cols-3 mt-10 '>
-        <div className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
+        <motion.div initial={{y:30 , opacity:0}} animate={{y:0 , opacity:1}} transition={{ease:"easeInOut" , duration:2}} className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
           <div className='flex justify-between mb-5 border-b border-zinc-800 mx-5'>
           <h1 className='italic text-xl md:text-2xl pr-2 font-semibold '>Schedly </h1> <span className='cursor-pointer hover:opacity-55 text-md  px-4 py-1 h-fit mb-2 bg-zinc-800 border border-black bg-opacity-35 text-zinc-600 rounded' onClick={()=>{window.open("https://github.com/osso2k/Schedly", "_blank")}}> source</span>
           </div>
@@ -19,8 +20,8 @@ const Projects = () => {
             <p className='text-blue-300 bg-blue-500 bg-opacity-25 px-2 py-1 text-sm rounded'>Express</p>
             <p className='text-zinc-300 bg-gray-500 bg-opacity-25 px-2 py-1 text-sm rounded'>PostgreSQL</p>
           </div>
-        </div>
-        <div className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
+        </motion.div>
+        <motion.div initial={{y:30 , opacity:0}} animate={{y:0 , opacity:1}} transition={{ease:"easeInOut" , duration:4}} className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
           <div className='flex justify-between mb-5 border-b border-zinc-800 mx-5'>
           <h1 className='italic text-xl md:text-2xl pr-2 font-semibold '>Resume Reviewer </h1> <span className='cursor-pointer hover:opacity-55 text-md  px-4 py-1 h-fit mb-2 bg-zinc-800 border border-black bg-opacity-35 text-zinc-600 rounded' onClick={()=>{window.open("https://github.com/osso2k/Schedly", "_blank")}}> source</span>
           </div>
@@ -33,8 +34,8 @@ const Projects = () => {
             <p className='text-blue-300 bg-blue-500 bg-opacity-25 px-2 py-1 text-sm rounded'>React Router</p>
             <p className='text-pink-300 bg-pink-500 bg-opacity-25 px-2 py-1 text-sm rounded'>Puter js</p>
           </div>
-        </div>
-        <div className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
+        </motion.div>
+        <motion.div initial={{y:30 , opacity:0}} animate={{y:0 , opacity:1}} transition={{ease:"easeInOut" , duration:6}} className='bg-[hsl(0,0%,6%)] px-2 py-4 rounded-lg '>
           <div className='flex justify-between mb-5 border-b border-zinc-800 mx-5'>
           <h1 className='italic text-xl md:text-2xl pr-2 font-semibold '>JPrep </h1> <span className='cursor-pointer hover:opacity-55 text-md  px-4 py-1 h-fit mb-2 bg-zinc-800 border border-black bg-opacity-35 text-zinc-600 rounded' onClick={()=>{window.open("https://github.com/osso2k/Schedly", "_blank")}}> source</span>
           </div>
@@ -48,7 +49,7 @@ const Projects = () => {
             <p className='text-blue-300 bg-blue-500 bg-opacity-25 px-2 py-1 text-sm rounded'>Express</p>
             <p className='text-green-400 bg-green-500 bg-opacity-25 px-2 py-1 text-sm rounded'>MongoDB</p>
           </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
