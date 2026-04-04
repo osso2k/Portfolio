@@ -5,6 +5,8 @@ import BlurText from "../Techs/BlurText";
 // import Skills from "../components/Skills";
 import { motion as Motion } from "motion/react";
 import Projects from "../components/Projects";
+import jojo from "../assets/jojo.png";
+import tbc from "../assets/tobecont.png";
 
 const Home = () => {
   const linkedIn = () => {
@@ -56,26 +58,26 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center md:items-center md:ml-6">
-            <Motion.img
-              whileHover={{ scale: 1.1 }}
-              transition={{ ease: "easeOut" }}
-              className="h-36 w-36 md:h-52 md:w-52 rounded-full object-cover"
-              src={osso}
-              alt="profile"
-            />
-            {/* <button
-              onClick={playPlaylist}
-              className="mt-4 md:mt-6 px-3 py-2 bg-[hsl(0,0%,12%)] border-2 shadow-lg border-black hover:opacity-70 text-gray-300 font-semibold rounded-lg transition duration-300 ease-in-out"
-            >
-              music?
-            </button> */}
-          </div>
+          <div className="relative flex items-center md:items-center md:ml-6">
+              <Motion.img
+                whileHover={{ scale: 1.1 }}
+                transition={{ ease: "easeOut" }}
+                className="h-36 w-36 md:h-52 md:w-52 rounded-full object-cover"
+                src={osso}
+                alt="profile"
+              />
+
+              <img
+                className="absolute -top-36 left-16  md:left-28 w-40 h-52 object-cover "
+                src={jojo}
+                alt="jojo overlay"
+              />
+            </div>
         </div>
 
         <div className="pt-4 mt-4 text-center ">
           <BlurText
-            text="I'm a full-stack developer who enjoys building real projects and solving problems that come up along the way. I like taking ideas from scratch to something working and usable, and I pay attention to the small details that make software reliable and easy to use. I spend most of my time coding, learning through practice, and improving with each project, and I'm always open to meeting other developers and building things together!"
+            text="I like coding and programming, and I mostly work with TypeScript and Python. I try to code most of the time because I genuinely enjoy learning and building things. I also enjoy chess, football, and basketball. Lately, I want to get into competitive programming to improve my problem-solving skills even more. My goal is to eventually work at a top-tier firm and reach my full potential."
             delay={50}
             animateBy="words"
             direction="top"
@@ -87,6 +89,9 @@ const Home = () => {
         <div className="max-w-full mt-6">
           {/* <Skills /> */}
           <Projects />
+        </div>
+        <div className="flex w-full my-16 ">
+        <img className="flex ml-[70%] object-cover bg-opacity-30 justify-center items-center rounded-xl  w-[40%] h-32 " src={tbc} alt="" />
         </div>
     </div>
   );
