@@ -1,0 +1,24 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+// import bggif from './assets/bggif.gif'
+// import Projects from "./pages/Projects";
+// import Extras from "./pages/Extras";
+
+const App = () => {
+  return (
+    <Router>
+      <div className="min-h-screen flex flex-col bg-[hsl(0,0%,5%)] text-white scroll-smooth">
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/extras" element={<Extras />} /> */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
