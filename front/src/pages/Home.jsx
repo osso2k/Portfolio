@@ -6,7 +6,7 @@ import BlurText from "../Techs/BlurText";
 import { motion as Motion } from "motion/react";
 import Projects from "../components/Projects";
 import jojo from "../assets/jojo.png";
-import tbc from "../assets/tobecont.png";
+import tbc from "../assets/tbc.png";
 
 const Home = () => {
   const linkedIn = () => {
@@ -86,12 +86,12 @@ const Home = () => {
         </div>
 
       </div>
-        <div className="max-w-full mt-6">
+        <div className="flex max-w-full mt-6">
           {/* <Skills /> */}
           <Projects />
         </div>
-        <div className="flex w-full my-16 ">
-        <img className="flex ml-[70%] object-cover bg-opacity-30 justify-center items-center rounded-xl  w-[40%] h-32 " src={tbc} alt="" />
+        <div className="flex w-full my-16 justify-end">
+        <img className="flex  object-fit rounded-2xl mr-5 w-[40%] h-24 " src={tbc} alt="" />
         </div>
     </div>
   );
