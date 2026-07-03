@@ -5,7 +5,7 @@ import BlurText from "../Techs/BlurText";
 // import Skills from "../components/Skills";
 import { motion as Motion } from "motion/react";
 import Projects from "../components/Projects";
-import jojo from "../assets/jojo.png";
+// import jojo from "../assets/jojo.png";
 import tbc from "../assets/tbc.png";
 
 const Home = () => {
@@ -67,11 +67,11 @@ const Home = () => {
                 alt="profile"
               />
 
-              <img
+              {/* <img
                 className="absolute -top-36 left-16  md:left-28 w-40 h-52 object-cover "
                 src={jojo}
                 alt="jojo overlay"
-              />
+              /> */}
             </div>
         </div>
 

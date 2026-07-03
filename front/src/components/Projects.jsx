@@ -26,7 +26,7 @@ const Projects = () => {
           <h1 className='italic text-xl md:text-2xl pr-2 font-semibold '>Resume Reviewer </h1> <span className='cursor-pointer hover:opacity-55 text-md  px-4 py-1 h-fit mb-2 bg-zinc-800 border border-black bg-opacity-35 text-zinc-600 rounded' onClick={()=>{window.open("https://github.com/osso2k/Resume-Analyzer", "_blank")}}> source</span>
           </div>
           <img src={airesume} alt="" className=' rounded-lg w-fit object-contain border border-black ' />
-          <h2 className='text-md text-gray-300 mt-2'>shows resume and ATS compatibility</h2>
+          <h2 className='text-md text-gray-300 mt-2'>Shows resume and ATS compatibility</h2>
           <p className='font-medium text-sm my-2 text-gray-400'>After struggling to understand why some of my job applications never received responses, I decided to build a resume feedback tool based on my own experience applying online. The application allows users to upload a resume and paste a job description to receive an ATS score and practical suggestions for improvement. While building it, I used React and TypeScript for the interface and integrated PDF.js to process resume files for analysis. I connected the system to an AI evaluation service that reviews formatting, keywords, and structure, and I used Puter cloud storage to securely save resumes and feedback history for future comparison. This helped me better understand hiring systems.</p>
           <div className='flex gap-1 flex-wrap'>
             <p className='text-cyan-400 bg-cyan-600 bg-opacity-25 px-2 py-1 text-sm rounded'>React</p>
